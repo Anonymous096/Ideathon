@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Services</title>
+    <link rel="stylesheet" href="Eservices.css">
+</head>
+<body>
+    <h2>EMERGENCY SERVICES</h2>
+<p>We will be assisting you with your emergency needs. We are at your service. Please let us know your need by filling in the form.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="e_service">Emergency Service</label>
+      </div>
+      <div class="col-75">
+        <select id="e_service" name="e_service">
+          <option value="Medical">Medical</option>
+          <option value="i_repair">Infrastructure Repair</option>
+          <option value="Medicines">Medicines</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="details">Details</label>
+      </div>
+      <div class="col-75">
+        <textarea id="details" name="details" placeholder="Please specify more details if any..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="btn">
+        <button class="button"><span>Submit</span></button>
+        <a href="services.html"><button class="button"><span>Back</span></button></a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

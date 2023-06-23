@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>TRANSPORTATION</h2>
+<p>Transportation is another major aspect in the development of an area. Transport of agricultural produce to the cities for sale is to be taken care of properly. Provide the details of your requirements : </p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Farmer Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="pno">Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pno" name="phonenumber" placeholder="Your phone number...">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="veh">Vehicle</label>
+      </div>
+      <div class="col-75">
+        <select id="special" name="special">
+          <option value="v1">Tractor Open Trolley</option>
+          <option value="v1.1">Tractor Covered Trolley</option>
+          <option value="v2">Covered Truck</option>
+          <option value="v3">Refrigerated truck</option>
+          <option value="v4">ATV</option>
+          <option value="v5">Mini Truck</option>
+          <option value="v6">Big Open Truck</option>
+          <option value="v7">Big Covered truck</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="nos">No. of Vehicles</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="nos" name="noofvehicle" >
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-25">
+        <label for="date">Required on</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="date" name="date" >
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Back">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation</title>
+    <link rel="stylesheet" href="transport.css">
+</head>
+<body>
+    <h2>TRANSPORTATION</h2>
+<p>Transportation is another major aspect in the development of an area. Transport of agricultural produce to the cities for sale is to be taken care of properly. Provide the details of your requirements : </p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Farmer Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="pno">Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pno" name="phonenumber" placeholder="Your phone number...">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="veh">Vehicle</label>
+      </div>
+      <div class="col-75">
+        <select id="special" name="special">
+          <option value="v1">Tractor Open Trolley</option>
+          <option value="v1.1">Tractor Covered Trolley</option>
+          <option value="v2">Covered Truck</option>
+          <option value="v3">Refrigerated truck</option>
+          <option value="v4">ATV</option>
+          <option value="v5">Mini Truck</option>
+          <option value="v6">Big Open Truck</option>
+          <option value="v7">Big Covered truck</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="nos">No. of Vehicles</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="nos" name="noofvehicle" >
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-25">
+        <label for="date">Required on</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="date" name="date" >
+      </div>
+    </div>
+    <div class="btn">
+        <button class="button"><span>Submit</span></button>
+        <button class="button"><span>Back</span></button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
